@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Barton Lodge Demo</title>
   <style>
-    body { font-family: Arial, sans-serif; padding: 2rem; max-width: 900px; margin: auto; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6; /* Improved line spacing */
+    }
     .wp-block-heading { font-weight: bold; }
     .has-text-color { color: #0090d4; }
     .has-background { background-color: #0090d4; }
@@ -76,7 +82,7 @@
   const onLoad = function(){
     const script = document.createElement("script");
     script.src = "https://www.chatbase.co/embed.min.js";
-    script.id = "6kZgfpwC7vEFhNEjuOzFM";  // This is the Barton Lodge bot ID
+    script.id = "6kZgfpwC7vEFhNEjuOzFM";
     script.domain = "www.chatbase.co";
     document.body.appendChild(script);
   };
