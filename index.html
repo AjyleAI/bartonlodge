@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barton Lodge AI Chatbot Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header, section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1, h3 {
+      text-align: center;
+      color: #0090d4;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px dotted #0090d4;
+      margin: 30px 0;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .image-center img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .spacer {
+      height: 100px;
+    }
+
+    a {
+      color: #0090d4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0090d4;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🐾 Prototype AI Chatbot for Barton Lodge</h1>
+    <p class="center"><strong>Smarter client support — built around your practice.</strong><br>
+    This working demo shows how a custom-trained AI chatbot could operate directly on your website, offering instant support, reducing admin pressure, and enhancing client experience.</p>
+  </header>
+
+  <hr />
+
+  <section>
+    <h3>💬 What This Demo Shows</h3>
+    <ul>
+      <li><strong>Trained on Barton Lodge’s website</strong> — answers real client questions instantly</li>
+      <li><strong>Simulates how the chatbot would appear live</strong> — pop-up chatbot in the bottom-right corner</li>
+      <li><strong>Hosted on a secure test server</strong> — the final version would be embedded directly into your site, fully branded</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section>
+    <h3>🧪 How to Try It</h3>
+    <ol>
+      <li><strong>Click the blue chat icon</strong> (bottom-right corner of this page) to open the demo bot.</li>
+      <li><strong>Type a question your clients might ask</strong>, such as:<br>
+        <em>“What services do you offer?”</em><br>
+        <em>“Do you provide out-of-hours care?”</em></li>
+      <li><strong>Keep the conversation going</strong> — as if you were a real client</li>
+    </ol>
+    <p><em>📝 <strong>Please note:</strong> this version uses a limited selection of content from your website. The live version can include your full site, forms, and any custom logic you require.</em></p>
+  </section>
+
+  <hr />
+
+  <section>
+    <h3>⚡ Why This Matters for Multi-Practice Groups</h3>
+    <ul>
+      <li><strong>Serve clients round the clock</strong> — even when the phones are off</li>
+      <li><strong>Free up your team’s time</strong> — fewer routine calls and queries</li>
+      <li><strong>Boost client confidence</strong> — instant, consistent answers</li>
+      <li><strong>No development required</strong> — plug-and-play setup, fully maintained</li>
+      <li><strong>Secure and GDPR-compliant</strong> from day one</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section class="image-center">
+    <img src="http://agilecatalyst.com/wp-content/uploads/2025/05/1-2.png" alt="Chatbot Demo Screenshot">
+  </section>
+
+  <hr />
+
+  <section>
+    <h3>🔐 Notes</h3>
+    <ul>
+      <li>This is a <strong>demo version</strong> hosted on a secure test environment.</li>
+      <li>In a live setup, it would sit on your own website — styled to your brand and connected to your full content.</li>
+      <li>Fully secure. Fully supported.</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <section class="center">
+    <p>🧠 <strong>Want to explore how this could work for Barton Lodge — or across multiple practices?</strong><br>
+    Let’s schedule a quick walkthrough.</p>
+    <p>
+      📅 <a class="button-link" href="https://scheduler.zoom.us/ajyleai/live-demo-strategy-session" target="_blank">Book Your Live Demo & Strategy Session</a>
+    </p>
+  </section>
+
+  <div class="spacer"></div>
+
+  <!-- Chatbase Embed Script -->
+  <script>
+    (function(){
+      if(!window.chatbase || window.chatbase("getState") !== "initialized") {
+        window.chatbase = (...args) => {
+          if (!window.chatbase.q) window.chatbase.q = [];
+          window.chatbase.q.push(args);
+        };
+        window.chatbase = new Proxy(window.chatbase, {
+          get(target, prop) {
+            if (prop === "q") return target.q;
+            return (...args) => target(prop, ...args);
+          }
+        });
+      }
+      const onLoad = function() {
+        const script = document.createElement("script");
+        script.src = "https://www.chatbase.co/embed.min.js";
+        script.id = "6kZgfpwC7vEFhNEjuOzFM";
+        script.domain = "www.chatbase.co";
+        document.body.appendChild(script);
+      };
+      if (document.readyState === "complete") {
+        onLoad();
+      } else {
+        window.addEventListener("load", onLoad);
+      }
+    })();
+  </script>
+
+</body>
+</html>
